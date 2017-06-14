@@ -5,7 +5,12 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\b\fs24 \cf0 Creating branch
+\f0\b\fs24 \cf0 Initialize\
+
+\b0 git init (in the folder path of git)
+\b \
+\
+Creating branch
 \b0 \
 git branch MyNewBranch\
 \
@@ -45,4 +50,14 @@ git rm 'filename.txt'\
 \
 \
 commit directly to repository\
-git commit -am "directly to repo"}
+git commit -am "directly to repo"\
+\
+revert file from stage\
+git checkout -- basic\\ git.rtf  (here basic\\ git.rtf is filename and -- means regardless of branch)\
+\
+git change commit recent last message\
+git commit --amend\
+\
+git undo as per commit token\
+git checkout 50dc0eed94a94 -- basic\\ git.rtf ( that number is the ref no)\
+}
